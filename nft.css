@@ -1,0 +1,120 @@
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.wrap {
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    width: 22vw;
+    height: 36vw;
+    border-radius: 12px;
+    position: relative;
+    top: 70px;
+}
+
+.box {
+    width: 20vw;
+    height: 18vw;
+    position: relative;
+    top: 15px;
+    left: 13px;
+    border-radius: 5px;
+    background: url("/Image/image-equilibrium.jpg") no-repeat;
+    background-size: cover;
+}
+.text,
+.ava,
+.text1 {
+    padding-left: 15px;
+}
+.text:hover {
+    color: hsl(188, 100%, 70%);
+    cursor: pointer;
+}
+.text {
+    padding-top: 30px;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 300;
+    font-family: outfit;
+}
+.text1 {
+    padding-top: 10px;
+    color: hsl(215, 32%, 45%);
+}
+.eth {
+    width: 4%;
+    height: 4%;
+    position: relative;
+    top: 25px;
+    left: 12px;
+    background: url("/Image/icon-ethereum.svg") no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(188, 100%, 80%);
+}
+.days {
+    width: 5%;
+    height: 5%;
+    background: url("/Image/icon-clock.svg") no-repeat;
+    float: right;
+    padding-right: 35%;
+    position: relative;
+    top: 8px;
+    color: hsl(215, 32%, 45%);
+}
+hr {
+    width: 90%;
+    height: 1px;
+    margin-top: 16%;
+    background-color: hsl(215, 32%, 45%);
+    border: none;
+}
+.ava {
+    width: 4%;
+    height: 4%;
+    background: url("/Image/image-avatar.png") no-repeat;
+    background-size: contain;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 15px;
+    padding-top: 8px;    
+}
+.teva {
+    padding-bottom: 10%;
+    position: relative;
+    bottom: 4%;
+    left: 18%;
+    color: hsl(215, 32%, 45%);
+}
+strong:hover {
+    color: hsl(188, 100%, 80%);
+    cursor: pointer;
+}
+strong {
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+}
+@media screen and (max-device-width:375px) {
+    body {
+        font-family: 'Outfit', sans-serif;
+    }
+    .wrap {
+        width: 85vw;
+        height: 140vw;
+    }
+    .box {
+        margin-top: 10px;
+        width: 90%;
+        height: 50%;
+        position: relative;
+        top: 15px;
+        left: 13px;
+        border-radius: 5px;
+    }
+    
+}
