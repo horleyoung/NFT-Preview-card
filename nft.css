@@ -12,7 +12,6 @@ body {
     position: relative;
     top: 70px;
 }
-
 .box {
     width: 20vw;
     height: 18vw;
@@ -23,13 +22,30 @@ body {
     background: url("image-equilibrium.jpg") no-repeat;
     background-size: cover;
 }
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: hsl(161, 93%, 50%);
+    mix-blend-mode: overlay;
+    border-radius: 5px;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+.box:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
 .text,
 .ava,
 .text1 {
     padding-left: 15px;
 }
 .text:hover {
-    color: hsl(188, 100%, 70%);
+    color: hsl(188, 100%, 80%);
     cursor: pointer;
 }
 .text {
@@ -91,11 +107,11 @@ hr {
     left: 18%;
     color: hsl(215, 32%, 45%);
 }
-strong:hover {
+span:hover {
     color: hsl(188, 100%, 80%);
     cursor: pointer;
 }
-strong {
+span {
     color: hsl(0, 0%, 100%);
     font-weight: 100;
 }
